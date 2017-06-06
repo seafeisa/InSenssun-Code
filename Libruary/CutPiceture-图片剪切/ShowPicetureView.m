@@ -101,7 +101,7 @@
 	CGImageRef tiledImage  = [theImage CGImage];
 	int w = CGImageGetWidth(tiledImage);
 	int h = CGImageGetHeight(tiledImage);
-	NSLog(@"theImage SIZE WIDTH = %d,height = %d",w,h);
+	NSLog(@"theImage SIZE WIDTH = %d,height = %d",1,h);
 	if(theImage.size.width > CUTVIEW_WIDTH_MAX)
 	{
 		mySize = CGSizeMake(CUTVIEW_WIDTH_MAX, theImage.size.height*(CUTVIEW_WIDTH_MAX/theImage.size.width));
@@ -158,7 +158,7 @@
 	int x = (320-size.width)/2;
 	int y = (380 - size.height)/2;
 
-	self.transform = CGAffineTransformRotate(self.transform, M_PI / 2.0);
+	self.transform = CGAffineTransformRotate(self.transform, -M_PI / 2.0);
 
 
 	[UIView commitAnimations];

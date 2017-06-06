@@ -17,5 +17,8 @@
 
 @property (nonatomic,retain)ShowPicetureView *ShowPicView;
 @property (nonatomic, retain, readonly) CutPicetureView * CutView;
+
+@property (nonatomic, assign) BOOL isCarm;
+
 @end
 

@@ -80,6 +80,7 @@
 				imagePicker.delegate = self;
 				imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
 				[self presentModalViewController:imagePicker animated:YES];
+                _isCarm = YES;
 				[imagePicker release];
 			}
 			break;
@@ -92,6 +93,7 @@
 				imagePicker.delegate = self;
 				imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 				[self presentModalViewController:imagePicker animated:YES];
+                _isCarm = NO;
 				[imagePicker release];
 			}
 			break;
@@ -110,13 +112,22 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)selectedImage editingInfo:(NSDictionary *)editingInfo 
 {
 	NSLog(@"selected Image Finished");
-	
+    if (_isCarm == YES) {
+        [ShowPicView PortraitImage];
+        [_CutView setBgImage:nil andtheRect:ShowPicView.frame];
+    }
+     CGFloat width = selectedImage.size.width;
+    CGFloat height = selectedImage.size.height;
 	//bIsNewPic = YES;
-	
+    if (selectedImage.size.width  > selectedImage.size.height) {
+        width = selectedImage.size.height;
+        height = selectedImage.size.width;
+    }
+    
 	CGSize mySize;
-	if(selectedImage.size.width > 640)
+	if(width > 640)
 	{
-		mySize = CGSizeMake(640, selectedImage.size.height*(640/selectedImage.size.width));
+		mySize = CGSizeMake(640, height*(640/width));
 		if(mySize.height > 960)
 		{
 			mySize = CGSizeMake(mySize.width*(960/mySize.height), 960);
@@ -124,7 +135,7 @@
 	}
 	else if(selectedImage.size.height > 960)
 	{
-		mySize = CGSizeMake(selectedImage.size.width*(960/selectedImage.size.height), 960);
+		mySize = CGSizeMake(width*(960/height), 960);
 		if(mySize.width > 960)
 		{
 			mySize = CGSizeMake(640, mySize.height*(640/mySize.width));
@@ -133,6 +144,8 @@
 	}
 	else
 	{
+    
+  
 	}
 
     [self dismissModalViewControllerAnimated:YES];
@@ -161,7 +174,7 @@
 	self.title = @"图片编辑Demo";
 	
 
-	
+    _isCarm = NO;
 	
 	 ShowPicView = [[ShowPicetureView alloc] initWithFrame:CGRectMake(20, 20, 280, 360)];
     ShowPicView.backgroundColor = [UIColor clearColor];
