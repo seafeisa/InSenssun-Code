@@ -1,0 +1,76 @@
+//
+//  PrefixHeader.pch
+//  ShangCheng
+//
+//  Created by 黄单单 on 2017/3/4.
+//  Copyright © 2017年 黄单单. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// categroy
+#import "UIColor_MyColor.h"
+#import "UIColor+expanded.h"
+#import "UITableView+Common.h"
+#import "UIView+Common.h"
+#import "NSString+common.h"
+#import "NSObject+Common.h"
+#import "ChangeNsnull.h"
+#import "UIImage+Common.h"
+
+// thirdly
+#import <Masonry/Masonry-umbrella.h>
+#import <SDWebImage/SDWebImage-umbrella.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import "MJRefresh.h"
+#import <AFNetworking/AFNetworking.h>
+
+#import "UITableView+FDTemplateLayoutCell.h"
+#import <TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h>
+#import "UIButton+ImageTitleSpacing.h"
+#import <Mantle/Mantle.h>
+
+#import "APPNetAPIClient.h"
+#import "APPNetAPIManager.h"
+#import "Login_Total.h"
+#import <PINCache/PINCache-umbrella.h>
+
+#endif
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
+#define kScaleFrom_iPhone5_Desgin(_X_) (_X_ * (kScreen_Width/320))
+#define kScaleFrom_iPhone6_Desgin(_X_) (_X_ * (kScreen_Width/375))
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kPaddingLeftWidth 15.0
+
+//常用变量
+#define DebugLog(s, ...) printf("%s(%d): %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String])
+
+#define NAV_BG(color)[self.navigationController.navigationBar setBackgroundImage:[UIColor createImageWithColor:color] forBarMetrics:UIBarMetricsDefault]; \
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+
+#define NAV_TINT(color) self.navigationController.navigationBar.tintColor = color;
+#define MainColor [UIColor hexStringToColor:@"3385FF"]
+
+

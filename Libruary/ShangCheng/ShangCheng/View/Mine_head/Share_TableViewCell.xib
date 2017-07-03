@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="505" id="KGk-i7-Jjw" customClass="Share_TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="505"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="505"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-q6-QNZ">
+                        <rect key="frame" x="70" y="40" width="180" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="1VN-J8-HZ6"/>
+                            <constraint firstAttribute="width" constant="180" id="8dt-nd-g7p"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kb-rd-caW">
+                        <rect key="frame" x="30" y="260" width="260" height="45"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Ghf-M6-siv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="分享"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="shsre_button:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hl0-cr-36z"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tx-ta-hrI">
+                        <rect key="frame" x="30" y="330" width="260" height="45"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="IO8-SP-ik8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="下载二维码"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="down_button:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rbq-td-UHq"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cQu-q6-QNZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0IQ-9q-eA4"/>
+                    <constraint firstItem="cQu-q6-QNZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="327-qi-xPw"/>
+                    <constraint firstItem="7Tx-ta-hrI" firstAttribute="trailing" secondItem="6Kb-rd-caW" secondAttribute="trailing" id="72x-30-Iri"/>
+                    <constraint firstAttribute="trailing" secondItem="6Kb-rd-caW" secondAttribute="trailing" constant="30" id="Ewp-Q8-QVu"/>
+                    <constraint firstItem="7Tx-ta-hrI" firstAttribute="top" secondItem="6Kb-rd-caW" secondAttribute="bottom" constant="25" id="Kav-Y7-Y7l"/>
+                    <constraint firstItem="6Kb-rd-caW" firstAttribute="top" secondItem="cQu-q6-QNZ" secondAttribute="bottom" constant="40" id="RHV-bv-wvD"/>
+                    <constraint firstItem="7Tx-ta-hrI" firstAttribute="leading" secondItem="6Kb-rd-caW" secondAttribute="leading" id="YHR-H6-WLz"/>
+                    <constraint firstItem="6Kb-rd-caW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="b3D-3F-GXH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon_image" destination="cQu-q6-QNZ" id="Odc-ex-rlf"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="194.5"/>
+        </tableViewCell>
+    </objects>
+</document>

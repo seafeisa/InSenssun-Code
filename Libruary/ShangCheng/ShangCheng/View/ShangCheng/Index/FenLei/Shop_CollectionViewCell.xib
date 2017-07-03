@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Shop_CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OCR-3r-Akf">
+                        <rect key="frame" x="5" y="0.0" width="175" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="iV9-RH-RWx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥239" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USE-42-zjS">
+                        <rect key="frame" x="0.0" y="90" width="92.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="ZUV-8f-eBY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥239" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWX-RS-CFp">
+                        <rect key="frame" x="92.5" y="90" width="92.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="mqI-uW-Exc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bE-dn-AV1">
+                        <rect key="frame" x="60" y="130" width="65" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="lVo-rW-4st"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="立即抢购"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电缆电缆电缆电缆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="353-HH-Y9Z">
+                        <rect key="frame" x="0.0" y="105" width="185" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="YPO-XK-ioM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="353-HH-Y9Z" firstAttribute="leading" secondItem="USE-42-zjS" secondAttribute="leading" id="1kj-Bz-ns5"/>
+                <constraint firstItem="3bE-dn-AV1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5Qb-7o-GUB"/>
+                <constraint firstItem="OCR-3r-Akf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="7A8-Ov-Wq0"/>
+                <constraint firstItem="USE-42-zjS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="98N-gy-9yK"/>
+                <constraint firstItem="353-HH-Y9Z" firstAttribute="top" secondItem="USE-42-zjS" secondAttribute="bottom" id="CHB-aV-XGj"/>
+                <constraint firstItem="353-HH-Y9Z" firstAttribute="trailing" secondItem="lWX-RS-CFp" secondAttribute="trailing" id="Gwx-y4-1jl"/>
+                <constraint firstItem="USE-42-zjS" firstAttribute="top" secondItem="OCR-3r-Akf" secondAttribute="bottom" id="U8Y-hR-Zn4"/>
+                <constraint firstItem="OCR-3r-Akf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xsd-f2-HwE"/>
+                <constraint firstItem="USE-42-zjS" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1/2" id="Yfh-GI-eba"/>
+                <constraint firstItem="lWX-RS-CFp" firstAttribute="leading" secondItem="USE-42-zjS" secondAttribute="trailing" id="ctB-y8-imu"/>
+                <constraint firstAttribute="trailing" secondItem="OCR-3r-Akf" secondAttribute="trailing" constant="5" id="k53-21-df0"/>
+                <constraint firstAttribute="trailing" secondItem="lWX-RS-CFp" secondAttribute="trailing" id="obL-67-6J1"/>
+                <constraint firstAttribute="bottom" secondItem="3bE-dn-AV1" secondAttribute="bottom" id="xGN-Cl-zXG"/>
+                <constraint firstItem="3bE-dn-AV1" firstAttribute="top" secondItem="353-HH-Y9Z" secondAttribute="bottom" id="yDu-Qe-SMA"/>
+                <constraint firstItem="lWX-RS-CFp" firstAttribute="top" secondItem="OCR-3r-Akf" secondAttribute="bottom" id="ylG-rN-LA8"/>
+            </constraints>
+            <size key="customSize" width="185" height="166"/>
+            <connections>
+                <outlet property="gray_price_label" destination="lWX-RS-CFp" id="dtc-Gq-nm4"/>
+                <outlet property="icon_image" destination="OCR-3r-Akf" id="yFf-5e-Wiw"/>
+                <outlet property="image_height" destination="iV9-RH-RWx" id="ylD-vh-WqR"/>
+                <outlet property="name_label" destination="353-HH-Y9Z" id="Qho-30-iZI"/>
+                <outlet property="qiang_gou_button" destination="3bE-dn-AV1" id="d1N-UR-iRI"/>
+                <outlet property="red_price_label" destination="USE-42-zjS" id="F35-BO-HkT"/>
+            </connections>
+            <point key="canvasLocation" x="-34.5" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>

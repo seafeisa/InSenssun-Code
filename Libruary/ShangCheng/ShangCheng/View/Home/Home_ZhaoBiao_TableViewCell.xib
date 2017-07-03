@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Home_ZhaoBiao_TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNl-xZ-44F">
+                        <rect key="frame" x="0.0" y="32" width="320" height="2"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.14964148120000001" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Ql1-hc-ISM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZi-Ax-wLH">
+                        <rect key="frame" x="245" y="5" width="70" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="4OM-ws-kcX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title=" 更多" image="more_blue.png">
+                            <color key="titleColor" red="0.12455551450729374" green="0.65696789935412703" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="more_button:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ojp-3W-jE1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招标/求标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oi-xY-SRA">
+                        <rect key="frame" x="36" y="5" width="204" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="XAK-Th-iLQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhaobiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="QS8-VM-b8O">
+                        <rect key="frame" x="10" y="5" width="21" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="6of-Rc-JDY"/>
+                            <constraint firstAttribute="width" constant="21" id="Msh-At-13e"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KZi-Ax-wLH" firstAttribute="top" secondItem="7Oi-xY-SRA" secondAttribute="top" id="6J1-p0-yOD"/>
+                    <constraint firstItem="7Oi-xY-SRA" firstAttribute="top" secondItem="QS8-VM-b8O" secondAttribute="top" id="8l0-k8-MQB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZNl-xZ-44F" secondAttribute="trailing" constant="-8" id="Ce0-9n-ebV"/>
+                    <constraint firstItem="KZi-Ax-wLH" firstAttribute="leading" secondItem="7Oi-xY-SRA" secondAttribute="trailing" constant="5" id="HWT-y5-Hmk"/>
+                    <constraint firstItem="ZNl-xZ-44F" firstAttribute="top" secondItem="QS8-VM-b8O" secondAttribute="bottom" constant="2" id="KUz-Y1-uFX"/>
+                    <constraint firstItem="ZNl-xZ-44F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="LwC-rk-NMW"/>
+                    <constraint firstItem="QS8-VM-b8O" firstAttribute="width" secondItem="QS8-VM-b8O" secondAttribute="height" multiplier="21:25" id="bb1-xI-ofp"/>
+                    <constraint firstItem="QS8-VM-b8O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hOP-nm-bYq"/>
+                    <constraint firstItem="KZi-Ax-wLH" firstAttribute="bottom" secondItem="7Oi-xY-SRA" secondAttribute="bottom" id="jD5-L5-rkC"/>
+                    <constraint firstItem="7Oi-xY-SRA" firstAttribute="leading" secondItem="QS8-VM-b8O" secondAttribute="trailing" constant="5" id="jZa-vV-NXA"/>
+                    <constraint firstItem="QS8-VM-b8O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yIq-ag-Eav"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KZi-Ax-wLH" secondAttribute="trailing" constant="5" id="3gI-0Z-pRP"/>
+            </constraints>
+            <connections>
+                <outlet property="more_button" destination="KZi-Ax-wLH" id="cPV-Dr-But"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more_blue.png" width="16" height="16"/>
+        <image name="zhaobiao.png" width="24" height="28"/>
+    </resources>
+</document>

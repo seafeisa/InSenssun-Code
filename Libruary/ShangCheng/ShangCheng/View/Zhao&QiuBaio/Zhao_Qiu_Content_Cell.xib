@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="Zhao_Qiu_Content_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_zhaobiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lf5-Lc-CgE">
+                        <rect key="frame" x="10" y="12" width="100" height="80.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="5iW-5V-y76"/>
+                            <constraint firstAttribute="height" constant="80" id="g7N-ya-6IR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年全面改动的哭的风景单反经典款淑女看见对方不是 v 肌肤额机会不多" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qP9-gU-m2W">
+                        <rect key="frame" x="120" y="33" width="243" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11家名企晒账本" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3W-TL-ABD">
+                        <rect key="frame" x="120" y="10" width="243" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-3-6" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTv-Tc-N7d">
+                        <rect key="frame" x="120" y="71.5" width="243" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lf5-Lc-CgE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0xb-DQ-Yao"/>
+                    <constraint firstItem="OTv-Tc-N7d" firstAttribute="trailing" secondItem="qP9-gU-m2W" secondAttribute="trailing" id="9de-ex-aOP"/>
+                    <constraint firstItem="qP9-gU-m2W" firstAttribute="leading" secondItem="Lf5-Lc-CgE" secondAttribute="trailing" constant="10" id="DHc-TR-4G0"/>
+                    <constraint firstItem="OTv-Tc-N7d" firstAttribute="top" secondItem="qP9-gU-m2W" secondAttribute="bottom" constant="5" id="JUf-mC-and"/>
+                    <constraint firstItem="qP9-gU-m2W" firstAttribute="top" secondItem="d3W-TL-ABD" secondAttribute="bottom" constant="5" id="YAl-Uh-tGd"/>
+                    <constraint firstItem="Lf5-Lc-CgE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="h6n-dx-XJE"/>
+                    <constraint firstItem="OTv-Tc-N7d" firstAttribute="leading" secondItem="qP9-gU-m2W" secondAttribute="leading" id="iS5-6A-mze"/>
+                    <constraint firstItem="d3W-TL-ABD" firstAttribute="trailing" secondItem="qP9-gU-m2W" secondAttribute="trailing" id="iS8-Zz-wFw"/>
+                    <constraint firstItem="d3W-TL-ABD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ll8-gd-ASU"/>
+                    <constraint firstItem="d3W-TL-ABD" firstAttribute="leading" secondItem="qP9-gU-m2W" secondAttribute="leading" id="yai-gC-FRI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qP9-gU-m2W" secondAttribute="trailing" constant="5" id="cXY-OX-BEg"/>
+            </constraints>
+            <connections>
+                <outlet property="desc_labelk" destination="qP9-gU-m2W" id="xVN-m6-k4l"/>
+                <outlet property="icon_image" destination="Lf5-Lc-CgE" id="0YC-yX-kNW"/>
+                <outlet property="time_label" destination="OTv-Tc-N7d" id="4yK-Ne-YM6"/>
+                <outlet property="title_label" destination="d3W-TL-ABD" id="qaL-qp-fJH"/>
+            </connections>
+            <point key="canvasLocation" x="1" y="-36.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_zhaobiao.png" width="80" height="80"/>
+    </resources>
+</document>

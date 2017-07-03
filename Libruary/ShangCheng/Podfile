@@ -1,0 +1,15 @@
+platform:ios, '8.0'
+use_frameworks!
+
+target 'ShangCheng' do
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'BlocksKit'
+pod 'TPKeyboardAvoiding'
+pod 'Mantle'
+pod 'hpple'
+pod 'MBProgressHUD'
+pod 'PINCache'
+pod 'MJRefresh'
+pod 'SDWebImage'
+end

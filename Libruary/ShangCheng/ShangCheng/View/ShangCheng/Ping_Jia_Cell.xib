@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="204" id="KGk-i7-Jjw" customClass="Ping_Jia_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head_img_pingjia.png" translatesAutoresizingMaskIntoConstraints="NO" id="pKL-hc-mVW">
+                        <rect key="frame" x="15" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pKL-hc-mVW" secondAttribute="height" multiplier="1:1" id="GT4-e1-dp9"/>
+                            <constraint firstAttribute="width" constant="50" id="QDR-1j-51V"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="葱根绿的小白菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfn-If-CaS">
+                        <rect key="frame" x="75" y="27" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-3-7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DE-Fu-jZ6">
+                        <rect key="frame" x="254" y="28.5" width="53" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7G-gq-WsT">
+                        <rect key="frame" x="15" y="65" width="292" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuB-aK-JYD">
+                        <rect key="frame" x="15" y="70" width="292" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="y8S-iR-qWi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f7G-gq-WsT" firstAttribute="top" secondItem="pKL-hc-mVW" secondAttribute="bottom" constant="5" id="1tB-Wv-i2y"/>
+                    <constraint firstItem="f7G-gq-WsT" firstAttribute="leading" secondItem="pKL-hc-mVW" secondAttribute="leading" id="3m6-bj-yNv"/>
+                    <constraint firstItem="zfn-If-CaS" firstAttribute="leading" secondItem="pKL-hc-mVW" secondAttribute="trailing" constant="10" id="7mD-Ng-W33"/>
+                    <constraint firstItem="PuB-aK-JYD" firstAttribute="trailing" secondItem="f7G-gq-WsT" secondAttribute="trailing" id="Eix-tS-dMY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4DE-Fu-jZ6" secondAttribute="trailing" constant="5" id="GgY-XG-bGK"/>
+                    <constraint firstItem="pKL-hc-mVW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="NFo-AB-rEc"/>
+                    <constraint firstItem="f7G-gq-WsT" firstAttribute="trailing" secondItem="4DE-Fu-jZ6" secondAttribute="trailing" id="TsD-a0-5ki"/>
+                    <constraint firstItem="PuB-aK-JYD" firstAttribute="top" secondItem="f7G-gq-WsT" secondAttribute="bottom" constant="5" id="Vuv-Bg-oQh"/>
+                    <constraint firstItem="PuB-aK-JYD" firstAttribute="leading" secondItem="f7G-gq-WsT" secondAttribute="leading" id="ecs-uQ-PlS"/>
+                    <constraint firstItem="pKL-hc-mVW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fCv-BF-wkO"/>
+                    <constraint firstItem="4DE-Fu-jZ6" firstAttribute="centerY" secondItem="zfn-If-CaS" secondAttribute="centerY" id="iTV-2h-xuf"/>
+                    <constraint firstItem="zfn-If-CaS" firstAttribute="centerY" secondItem="pKL-hc-mVW" secondAttribute="centerY" id="qAR-ih-xXh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content_label" destination="f7G-gq-WsT" id="uHc-8L-c0m"/>
+                <outlet property="icon_image" destination="pKL-hc-mVW" id="Dr5-td-5jC"/>
+                <outlet property="name_label" destination="zfn-If-CaS" id="yB6-n8-y19"/>
+                <outlet property="time_label" destination="4DE-Fu-jZ6" id="hxd-G4-1GZ"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="-15"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="head_img_pingjia.png" width="50" height="50"/>
+    </resources>
+</document>

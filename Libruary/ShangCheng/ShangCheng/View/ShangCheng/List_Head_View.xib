@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="List_Head_View">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HId-lB-aeG">
+                    <rect key="frame" x="0.0" y="0.0" width="47" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HId-lB-aeG" secondAttribute="height" multiplier="11:15" id="SXw-cB-TU2"/>
+                    </constraints>
+                    <state key="normal" image="return.png"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YV6-oH-ODs">
+                    <rect key="frame" x="47" y="15" width="281" height="35"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="7r2-6n-ZHX">
+                            <rect key="frame" x="258" y="5" width="18" height="26"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="通讯电缆" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFh-BJ-6bG">
+                            <rect key="frame" x="5" y="0.0" width="246" height="35"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.20416845034246575" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ZFh-BJ-6bG" firstAttribute="leading" secondItem="YV6-oH-ODs" secondAttribute="leading" constant="5" id="DQU-6K-5xT"/>
+                        <constraint firstAttribute="height" constant="35" id="DqT-Ql-bHS"/>
+                        <constraint firstItem="7r2-6n-ZHX" firstAttribute="centerY" secondItem="YV6-oH-ODs" secondAttribute="centerY" id="E1l-9T-UpO"/>
+                        <constraint firstAttribute="trailing" secondItem="ZFh-BJ-6bG" secondAttribute="trailing" constant="30" id="Wc0-32-4HQ"/>
+                        <constraint firstAttribute="trailing" secondItem="7r2-6n-ZHX" secondAttribute="trailing" constant="5" id="hL1-Vn-msL"/>
+                        <constraint firstItem="ZFh-BJ-6bG" firstAttribute="top" secondItem="YV6-oH-ODs" secondAttribute="top" id="pbL-Yn-h3u"/>
+                        <constraint firstAttribute="bottom" secondItem="ZFh-BJ-6bG" secondAttribute="bottom" id="ysO-cH-TBc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmu-ZP-zKN">
+                    <rect key="frame" x="0.0" y="62" width="375" height="2"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="cEx-5B-KY0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fp-jI-jJb">
+                    <rect key="frame" x="328" y="0.0" width="47" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7fp-jI-jJb" secondAttribute="height" multiplier="11:15" id="S4r-qg-t0W"/>
+                    </constraints>
+                    <state key="normal" image="nav_fenlei_1.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7fp-jI-jJb" secondAttribute="trailing" id="1bd-9p-KgF"/>
+                <constraint firstItem="HId-lB-aeG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1se-Yp-Pd6"/>
+                <constraint firstAttribute="bottom" secondItem="7fp-jI-jJb" secondAttribute="bottom" id="Eda-17-Wk6"/>
+                <constraint firstItem="HId-lB-aeG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FHL-zs-cxJ"/>
+                <constraint firstAttribute="bottom" secondItem="Fmu-ZP-zKN" secondAttribute="bottom" id="Hhh-D8-fPH"/>
+                <constraint firstAttribute="bottom" secondItem="HId-lB-aeG" secondAttribute="bottom" id="Wch-5T-JSZ"/>
+                <constraint firstItem="YV6-oH-ODs" firstAttribute="centerY" secondItem="HId-lB-aeG" secondAttribute="centerY" id="cps-i4-aQx"/>
+                <constraint firstItem="7fp-jI-jJb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f1a-22-RKU"/>
+                <constraint firstItem="7fp-jI-jJb" firstAttribute="leading" secondItem="YV6-oH-ODs" secondAttribute="trailing" id="fnA-iE-Wds"/>
+                <constraint firstItem="HId-lB-aeG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jX8-FP-FPI"/>
+                <constraint firstItem="YV6-oH-ODs" firstAttribute="leading" secondItem="HId-lB-aeG" secondAttribute="trailing" id="oGa-Oo-EgM"/>
+                <constraint firstAttribute="trailing" secondItem="Fmu-ZP-zKN" secondAttribute="trailing" id="vZg-oO-1fl"/>
+                <constraint firstItem="Fmu-ZP-zKN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x3C-Gt-QTa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="return_button" destination="HId-lB-aeG" id="z4r-sE-oSh"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="-112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_fenlei_1.png" width="16" height="16"/>
+        <image name="return.png" width="10" height="23"/>
+        <image name="search_1.png" width="18" height="26"/>
+    </resources>
+</document>

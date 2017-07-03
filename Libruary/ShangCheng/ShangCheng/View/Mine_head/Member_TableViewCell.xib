@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="303" id="KGk-i7-Jjw" customClass="Member_TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="303"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="303"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择支付方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gz-0N-XPd">
+                        <rect key="frame" x="20" y="113" width="107.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzS-YU-YlK">
+                        <rect key="frame" x="20" y="151" width="177" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="VT9-DH-mgO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="微信支付">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" red="0.20000000000000001" green="0.52156862749999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="wechat_button:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="g5V-cp-TTQ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jb8-Qa-gJw">
+                        <rect key="frame" x="20" y="221" width="402" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="KfQ-nt-5Cm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="确认支付">
+                            <color key="titleColor" red="0.20000000000000001" green="0.52156862749999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.20000000000000001" green="0.52156862749999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="sure_pay:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CtD-iA-GOF"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVm-X7-gT5">
+                        <rect key="frame" x="245" y="151" width="177" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="oNR-NO-ibP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="支付宝支付">
+                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" red="0.20000000000000001" green="0.52156862749999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.20000000000000001" green="0.52156862749999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="ali_button:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BIT-U3-NLT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5gz-0N-XPd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3ub-Wa-Mpz"/>
+                    <constraint firstItem="oVm-X7-gT5" firstAttribute="width" secondItem="KzS-YU-YlK" secondAttribute="width" id="7yC-vA-cEF"/>
+                    <constraint firstItem="KzS-YU-YlK" firstAttribute="leading" secondItem="5gz-0N-XPd" secondAttribute="leading" id="E4i-p0-Q0M"/>
+                    <constraint firstItem="KzS-YU-YlK" firstAttribute="top" secondItem="5gz-0N-XPd" secondAttribute="bottom" constant="20" id="RvF-yW-yhp"/>
+                    <constraint firstItem="jb8-Qa-gJw" firstAttribute="trailing" secondItem="oVm-X7-gT5" secondAttribute="trailing" id="Sc7-MD-gBH"/>
+                    <constraint firstItem="jb8-Qa-gJw" firstAttribute="leading" secondItem="KzS-YU-YlK" secondAttribute="leading" id="hCf-YB-U3w"/>
+                    <constraint firstItem="oVm-X7-gT5" firstAttribute="top" secondItem="KzS-YU-YlK" secondAttribute="top" id="nAz-th-VB1"/>
+                    <constraint firstItem="5gz-0N-XPd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="113" id="u8c-9E-CKG"/>
+                    <constraint firstItem="jb8-Qa-gJw" firstAttribute="top" secondItem="KzS-YU-YlK" secondAttribute="bottom" constant="30" id="w4e-8w-S4B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="KzS-YU-YlK" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="2/5" id="4t6-Tf-Fh5"/>
+                <constraint firstAttribute="trailing" secondItem="oVm-X7-gT5" secondAttribute="trailing" constant="20" id="HOL-rC-zgR"/>
+            </constraints>
+            <connections>
+                <outlet property="ali_button" destination="oVm-X7-gT5" id="Bdh-ey-X6m"/>
+                <outlet property="wechat_button" destination="KzS-YU-YlK" id="DqY-7d-Bkh"/>
+            </connections>
+            <point key="canvasLocation" x="48" y="103.5"/>
+        </tableViewCell>
+    </objects>
+</document>

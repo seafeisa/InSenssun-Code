@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HotShop_CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="132"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_fenlei.png" translatesAutoresizingMaskIntoConstraints="NO" id="H54-84-JdI">
+                        <rect key="frame" x="10" y="5" width="133" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="uRr-Fl-mVQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥129" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0T-0k-epr">
+                        <rect key="frame" x="0.0" y="100" width="76.5" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥129" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFb-ZE-NMi">
+                        <rect key="frame" x="76.5" y="100" width="76.5" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电缆电缆电缆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jv2-eb-Oi6">
+                        <rect key="frame" x="0.0" y="75" width="153" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="QFf-Jb-omS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="zFb-ZE-NMi" firstAttribute="top" secondItem="N0T-0k-epr" secondAttribute="top" id="0K9-lh-5fm"/>
+                <constraint firstItem="zFb-ZE-NMi" firstAttribute="bottom" secondItem="N0T-0k-epr" secondAttribute="bottom" id="4f5-UH-WD4"/>
+                <constraint firstItem="H54-84-JdI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="92m-RN-VyO"/>
+                <constraint firstAttribute="bottom" secondItem="N0T-0k-epr" secondAttribute="bottom" id="Diq-dc-nun"/>
+                <constraint firstAttribute="trailing" secondItem="jv2-eb-Oi6" secondAttribute="trailing" id="GX6-Hk-Tsb"/>
+                <constraint firstItem="jv2-eb-Oi6" firstAttribute="top" secondItem="H54-84-JdI" secondAttribute="bottom" id="H1t-Me-5Xp"/>
+                <constraint firstItem="N0T-0k-epr" firstAttribute="top" secondItem="jv2-eb-Oi6" secondAttribute="bottom" id="H9R-fS-Tpb"/>
+                <constraint firstItem="jv2-eb-Oi6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JXh-9J-7v3"/>
+                <constraint firstItem="zFb-ZE-NMi" firstAttribute="leading" secondItem="N0T-0k-epr" secondAttribute="trailing" id="M0q-7t-zcV"/>
+                <constraint firstItem="H54-84-JdI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Mk2-pM-SPK"/>
+                <constraint firstAttribute="trailing" secondItem="H54-84-JdI" secondAttribute="trailing" constant="10" id="emD-bB-vli"/>
+                <constraint firstAttribute="trailing" secondItem="zFb-ZE-NMi" secondAttribute="trailing" id="iRF-C2-hzf"/>
+                <constraint firstItem="N0T-0k-epr" firstAttribute="width" secondItem="jv2-eb-Oi6" secondAttribute="width" multiplier="1/2" id="mYP-rD-5w5"/>
+                <constraint firstItem="N0T-0k-epr" firstAttribute="leading" secondItem="jv2-eb-Oi6" secondAttribute="leading" id="uno-Uz-iq7"/>
+            </constraints>
+            <size key="customSize" width="153" height="132"/>
+            <connections>
+                <outlet property="gray_price_label" destination="zFb-ZE-NMi" id="aOv-Vn-T4V"/>
+                <outlet property="icon_image" destination="H54-84-JdI" id="9oM-iP-Ol2"/>
+                <outlet property="name_label" destination="jv2-eb-Oi6" id="Khy-u6-wUq"/>
+                <outlet property="red_price_label" destination="N0T-0k-epr" id="IuD-WB-Phe"/>
+            </connections>
+            <point key="canvasLocation" x="1.5" y="11"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_fenlei.png" width="312" height="312"/>
+    </resources>
+</document>
